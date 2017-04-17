@@ -23,7 +23,7 @@ require 'date'
 	        'dimensions' => 'ga:pagePath',
 	        'metrics'    => 'ga:pageviews,ga:avgTimeOnPage',
 	        'sort'       => '-ga:pageviews',
-	    #    "filters"=>"ga:pagePath=~\/#{page_starts_with}.*",      
+	        "filters"=>"ga:pagePath=~\/#{page_starts_with}.*",      
 	        "max-results"=>"50"
 	      }).data.rows
 	  end
